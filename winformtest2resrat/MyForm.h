@@ -75,6 +75,10 @@ namespace winformtest2resrat {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Panel^ panel4;
 	private: System::Windows::Forms::CheckBox^ checkBox1;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button8;
 
 
 
@@ -152,6 +156,7 @@ namespace winformtest2resrat {
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
@@ -160,6 +165,7 @@ namespace winformtest2resrat {
 			this->richTextBox4 = (gcnew System::Windows::Forms::RichTextBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
@@ -168,13 +174,15 @@ namespace winformtest2resrat {
 			this->richTextBox6 = (gcnew System::Windows::Forms::RichTextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->richTextBox3 = (gcnew System::Windows::Forms::RichTextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -195,7 +203,7 @@ namespace winformtest2resrat {
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->editToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(258, 30);
+			this->menuStrip1->Size = System::Drawing::Size(258, 28);
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -203,7 +211,7 @@ namespace winformtest2resrat {
 			// 
 			this->editToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->typeToolStripMenuItem });
 			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
-			this->editToolStripMenuItem->Size = System::Drawing::Size(49, 26);
+			this->editToolStripMenuItem->Size = System::Drawing::Size(49, 24);
 			this->editToolStripMenuItem->Text = L"Edit";
 			// 
 			// typeToolStripMenuItem
@@ -296,7 +304,7 @@ namespace winformtest2resrat {
 			this->richTextBox1->Location = System::Drawing::Point(13, 87);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->ReadOnly = true;
-			this->richTextBox1->Size = System::Drawing::Size(233, 181);
+			this->richTextBox1->Size = System::Drawing::Size(233, 152);
 			this->richTextBox1->TabIndex = 5;
 			this->richTextBox1->Text = L"";
 			// 
@@ -314,6 +322,7 @@ namespace winformtest2resrat {
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->button7);
 			this->panel1->Controls->Add(this->label3);
 			this->panel1->Controls->Add(this->richTextBox1);
 			this->panel1->Controls->Add(this->button1);
@@ -323,8 +332,18 @@ namespace winformtest2resrat {
 			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Location = System::Drawing::Point(0, 31);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(258, 278);
+			this->panel1->Size = System::Drawing::Size(258, 279);
 			this->panel1->TabIndex = 2;
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(14, 245);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(233, 23);
+			this->button7->TabIndex = 8;
+			this->button7->Text = L"Clear";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 			// 
 			// textBox6
 			// 
@@ -376,7 +395,7 @@ namespace winformtest2resrat {
 			this->richTextBox4->Location = System::Drawing::Point(13, 87);
 			this->richTextBox4->Name = L"richTextBox4";
 			this->richTextBox4->ReadOnly = true;
-			this->richTextBox4->Size = System::Drawing::Size(233, 181);
+			this->richTextBox4->Size = System::Drawing::Size(233, 152);
 			this->richTextBox4->TabIndex = 5;
 			this->richTextBox4->Text = L"";
 			// 
@@ -394,6 +413,7 @@ namespace winformtest2resrat {
 			// 
 			// panel3
 			// 
+			this->panel3->Controls->Add(this->button5);
 			this->panel3->Controls->Add(this->label8);
 			this->panel3->Controls->Add(this->richTextBox4);
 			this->panel3->Controls->Add(this->button4);
@@ -401,11 +421,21 @@ namespace winformtest2resrat {
 			this->panel3->Controls->Add(this->textBox5);
 			this->panel3->Controls->Add(this->label10);
 			this->panel3->Controls->Add(this->textBox6);
-			this->panel3->Location = System::Drawing::Point(0, 31);
+			this->panel3->Location = System::Drawing::Point(0, 28);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(258, 278);
+			this->panel3->Size = System::Drawing::Size(258, 294);
 			this->panel3->TabIndex = 8;
 			this->panel3->Visible = false;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(12, 245);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(233, 23);
+			this->button5->TabIndex = 8;
+			this->button5->Text = L"Clear";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// textBox9
 			// 
@@ -457,7 +487,7 @@ namespace winformtest2resrat {
 			this->richTextBox6->Location = System::Drawing::Point(13, 87);
 			this->richTextBox6->Name = L"richTextBox6";
 			this->richTextBox6->ReadOnly = true;
-			this->richTextBox6->Size = System::Drawing::Size(233, 181);
+			this->richTextBox6->Size = System::Drawing::Size(233, 155);
 			this->richTextBox6->TabIndex = 5;
 			this->richTextBox6->Text = L"";
 			// 
@@ -475,6 +505,7 @@ namespace winformtest2resrat {
 			// 
 			// panel5
 			// 
+			this->panel5->Controls->Add(this->button8);
 			this->panel5->Controls->Add(this->checkBox1);
 			this->panel5->Controls->Add(this->label13);
 			this->panel5->Controls->Add(this->richTextBox6);
@@ -483,18 +514,38 @@ namespace winformtest2resrat {
 			this->panel5->Controls->Add(this->textBox8);
 			this->panel5->Controls->Add(this->label15);
 			this->panel5->Controls->Add(this->textBox9);
-			this->panel5->Location = System::Drawing::Point(0, 31);
+			this->panel5->Location = System::Drawing::Point(0, 28);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(258, 278);
+			this->panel5->Size = System::Drawing::Size(258, 279);
 			this->panel5->TabIndex = 9;
 			this->panel5->Visible = false;
 			this->panel5->Click += gcnew System::EventHandler(this, &MyForm::panel5_Click);
 			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(14, 248);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(233, 28);
+			this->button8->TabIndex = 8;
+			this->button8->Text = L"Clear";
+			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
+			// 
+			// checkBox1
+			// 
+			this->checkBox1->AutoSize = true;
+			this->checkBox1->Location = System::Drawing::Point(171, 61);
+			this->checkBox1->Name = L"checkBox1";
+			this->checkBox1->Size = System::Drawing::Size(64, 20);
+			this->checkBox1->TabIndex = 7;
+			this->checkBox1->Text = L"X or Y";
+			this->checkBox1->UseVisualStyleBackColor = true;
+			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(57, 30);
+			this->textBox3->Location = System::Drawing::Point(52, 30);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(108, 22);
+			this->textBox3->Size = System::Drawing::Size(113, 22);
 			this->textBox3->TabIndex = 0;
 			// 
 			// label7
@@ -502,9 +553,9 @@ namespace winformtest2resrat {
 			this->label7->AutoSize = true;
 			this->label7->Location = System::Drawing::Point(11, 34);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(42, 16);
+			this->label7->Size = System::Drawing::Size(35, 16);
 			this->label7->TabIndex = 1;
-			this->label7->Text = L"Ratio:";
+			this->label7->Text = L"Res:";
 			// 
 			// button3
 			// 
@@ -523,7 +574,7 @@ namespace winformtest2resrat {
 			this->richTextBox3->Location = System::Drawing::Point(13, 59);
 			this->richTextBox3->Name = L"richTextBox3";
 			this->richTextBox3->ReadOnly = true;
-			this->richTextBox3->Size = System::Drawing::Size(233, 209);
+			this->richTextBox3->Size = System::Drawing::Size(233, 183);
 			this->richTextBox3->TabIndex = 5;
 			this->richTextBox3->Text = L"";
 			// 
@@ -541,26 +592,27 @@ namespace winformtest2resrat {
 			// 
 			// panel4
 			// 
+			this->panel4->Controls->Add(this->button2);
 			this->panel4->Controls->Add(this->label5);
 			this->panel4->Controls->Add(this->richTextBox3);
 			this->panel4->Controls->Add(this->button3);
 			this->panel4->Controls->Add(this->label7);
 			this->panel4->Controls->Add(this->textBox3);
-			this->panel4->Location = System::Drawing::Point(0, 31);
+			this->panel4->Location = System::Drawing::Point(0, 28);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(258, 278);
+			this->panel4->Size = System::Drawing::Size(258, 279);
 			this->panel4->TabIndex = 7;
 			this->panel4->Visible = false;
 			// 
-			// checkBox1
+			// button2
 			// 
-			this->checkBox1->AutoSize = true;
-			this->checkBox1->Location = System::Drawing::Point(171, 61);
-			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(64, 20);
-			this->checkBox1->TabIndex = 7;
-			this->checkBox1->Text = L"X or Y";
-			this->checkBox1->UseVisualStyleBackColor = true;
+			this->button2->Location = System::Drawing::Point(14, 248);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(232, 23);
+			this->button2->TabIndex = 7;
+			this->button2->Text = L"Clear";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// MyForm
 			// 
@@ -645,5 +697,17 @@ namespace winformtest2resrat {
 		panel5->Visible = false;
 		panel3->Visible = true;
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox3->Text = StringToText("");
+	}
+private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	richTextBox6->Text = StringToText("");
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	richTextBox4->Text = StringToText("");
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	richTextBox1->Text = StringToText("");
+}
+};
 }

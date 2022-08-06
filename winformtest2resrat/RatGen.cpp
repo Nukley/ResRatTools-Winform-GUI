@@ -7,7 +7,7 @@ std::string str;
 
 std::string XOrYCalc(int amountOfRats, int RatVals[], int whichVal)
 {
-    int ResInc;
+    int ResInc = 0;
     int i = 0;
     std::string str2;
     while (ResInc < amountOfRats) {
